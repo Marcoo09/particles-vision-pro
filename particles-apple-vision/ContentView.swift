@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var showImmersiveSpace = false
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace    
 
     var body: some View {
         NavigationStack {

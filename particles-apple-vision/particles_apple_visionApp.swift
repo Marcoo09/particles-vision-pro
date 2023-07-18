@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct particles_apple_visionApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup(id: "ContentView") {
             ContentView()
         }
 

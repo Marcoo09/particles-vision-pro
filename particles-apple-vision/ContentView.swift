@@ -12,14 +12,24 @@ import RealityKitContent
 struct ContentView: View {
 
     @State var showImmersiveSpace = false
-
+    @Environment(ViewModel.self) private var model
+    
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace    
 
     var body: some View {
+        @Bindable var model = model
+
         NavigationStack {
             VStack {
-                Text("Hello, world!")
+                Picker("Background", selection: $model.selectedBackground) {
+                    ForEach(Background.allCases) {
+                        Text($0.name)
+                      }
+                }
+                .disabled(showImmersiveSpace)
+                .pickerStyle(.segmented)
+                .padding(.bottom, 50)
 
                 Toggle("Make it Rain", isOn: $showImmersiveSpace)
                     .toggleStyle(.button)

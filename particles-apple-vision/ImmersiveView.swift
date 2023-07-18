@@ -10,11 +10,15 @@ import RealityKit
 import RealityKitContent
 
 struct ImmersiveView: View {
+    @Environment(ViewModel.self) private var model
+
     var body: some View {
+        @Bindable var model: ViewModel = model
+
         RealityView { content in
             // Add the initial RealityKit content
             if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                scene.addSkybox(for: .beach)
+                scene.addSkybox(for: model.selectedBackground)
                 content.add(scene)
             }
         }

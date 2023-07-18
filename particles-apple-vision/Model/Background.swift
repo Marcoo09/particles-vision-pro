@@ -6,7 +6,8 @@
 //
 
 import Foundation
-enum Background: String, CaseIterable, Identifiable, Codable {
+
+enum Background: String, CaseIterable, Identifiable, Codable, Equatable {
     
     case beach
     case camping
@@ -17,6 +18,8 @@ enum Background: String, CaseIterable, Identifiable, Codable {
     case park
     
     var id: Self { self }
+    
+    var name: String { rawValue.capitalized }
     
     /// The environment image to load.
     var imageName: String { "\(rawValue)_scene" }

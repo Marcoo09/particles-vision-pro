@@ -15,6 +15,7 @@
 		8AABAA432A6602B800B19393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AABAA422A6602B800B19393 /* Preview Assets.xcassets */; };
 		8AABAA4D2A6602B800B19393 /* particles_apple_visionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABAA4C2A6602B800B19393 /* particles_apple_visionTests.swift */; };
 		8ABE4FC62A6628490064E5F8 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE4FC52A6628490064E5F8 /* Background.swift */; };
+		8AE563CE2A67461F005916EE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE563CD2A67461F005916EE /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8AABAA482A6602B800B19393 /* particles-apple-visionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "particles-apple-visionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AABAA4C2A6602B800B19393 /* particles_apple_visionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = particles_apple_visionTests.swift; sourceTree = "<group>"; };
 		8ABE4FC52A6628490064E5F8 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		8AE563CD2A67461F005916EE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8ABE4FC52A6628490064E5F8 /* Background.swift */,
+				8AE563CD2A67461F005916EE /* ViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE563CE2A67461F005916EE /* ViewModel.swift in Sources */,
 				8AABAA3C2A6602B700B19393 /* ContentView.swift in Sources */,
 				8AABAA3A2A6602B700B19393 /* particles_apple_visionApp.swift in Sources */,
 				8AABAA3E2A6602B700B19393 /* ImmersiveView.swift in Sources */,

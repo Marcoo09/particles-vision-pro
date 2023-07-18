@@ -14,6 +14,7 @@
 		8AABAA402A6602B800B19393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AABAA3F2A6602B800B19393 /* Assets.xcassets */; };
 		8AABAA432A6602B800B19393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AABAA422A6602B800B19393 /* Preview Assets.xcassets */; };
 		8AABAA4D2A6602B800B19393 /* particles_apple_visionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABAA4C2A6602B800B19393 /* particles_apple_visionTests.swift */; };
+		8ABE4FC62A6628490064E5F8 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE4FC52A6628490064E5F8 /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8AABAA422A6602B800B19393 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AABAA482A6602B800B19393 /* particles-apple-visionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "particles-apple-visionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AABAA4C2A6602B800B19393 /* particles_apple_visionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = particles_apple_visionTests.swift; sourceTree = "<group>"; };
+		8ABE4FC52A6628490064E5F8 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		8AABAA342A6602B700B19393 /* particles-apple-vision */ = {
 			isa = PBXGroup;
 			children = (
+				8ABE4FC42A6628360064E5F8 /* Model */,
 				8AABAA392A6602B700B19393 /* particles_apple_visionApp.swift */,
 				8AABAA3B2A6602B700B19393 /* ContentView.swift */,
 				8AABAA3D2A6602B700B19393 /* ImmersiveView.swift */,
@@ -110,6 +113,14 @@
 				8AABAA4C2A6602B800B19393 /* particles_apple_visionTests.swift */,
 			);
 			path = "particles-apple-visionTests";
+			sourceTree = "<group>";
+		};
+		8ABE4FC42A6628360064E5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ABE4FC52A6628490064E5F8 /* Background.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				8AABAA3C2A6602B700B19393 /* ContentView.swift in Sources */,
 				8AABAA3A2A6602B700B19393 /* particles_apple_visionApp.swift in Sources */,
 				8AABAA3E2A6602B700B19393 /* ImmersiveView.swift in Sources */,
+				8ABE4FC62A6628490064E5F8 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

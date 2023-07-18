@@ -16,6 +16,6 @@ struct particles_apple_visionApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
-        }
+        }.immersionStyle(selection: .constant(.full), in: .full)
     }
 }
